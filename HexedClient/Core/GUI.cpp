@@ -102,7 +102,7 @@ void GUI::Delete()
 
 void GUI::RenderMain()
 {
-	ImGui::Begin("H E X E D");
+	ImGui::Begin("FxClient");
 
 	if (ImGui::CollapsingHeader("MOVEMENT"))
 	{
@@ -214,7 +214,7 @@ void GUI::RenderInfo()
 	ImGui::SetNextWindowBgAlpha(0.25f);
 	bool* info_open = (bool*)0;
 	ImGui::Begin("Info", info_open, window_flags);
-	ImGui::Text(("FPS: " + std::to_string(Settings::DebugFPS) + " Ping: " + std::to_string(Settings::DebugPing)).c_str());
+	ImGui::Text(("FxClient   FPS: " + std::to_string(Settings::DebugFPS) + " Ping: " + std::to_string(Settings::DebugPing)).c_str());
 
 	ImGui::End();
 }
