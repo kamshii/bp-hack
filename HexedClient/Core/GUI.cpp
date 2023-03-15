@@ -31,7 +31,7 @@ void GUI::Create()
 
 	auto& style = ImGui::GetStyle();
 	style.FrameRounding = 4.0f;
-	style.WindowBorderSize = 2.0f;
+	style.WindowBorderSize = 4.0f;
 	style.PopupBorderSize = 0.0f;
 	style.GrabRounding = 4.0f;
 
